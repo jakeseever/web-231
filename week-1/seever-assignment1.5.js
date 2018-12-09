@@ -2,13 +2,13 @@
 ============================================
 ; Title:  Assignment 1.5
 ; Author: Albert Einstein
-; Date:   25 June 2017
+; Date:   02 June 2018
 ; Modified By: Jake Seever
 ; Description: This program demonstrates the
-;   use of JavaScript types, values, and 
+;   use of JavaScript types, values, and
 ;   and variables in an application.
 ;===========================================
-*/ 
+*/
 
 /*
     The code below builds a properly formatted
@@ -26,7 +26,7 @@ var programHeader = "\n" + myFirstName + " " + myLastName + "\n"
     + assignmentNum + "\nDate: " + todaysDate;
 
 console.log(programHeader);
-console.log("\n"); 
+console.log("\n");
 
 // start of program - your code goes below this line
 var employeeFirstName = "Bob";
@@ -42,4 +42,4 @@ var output = "First Name: " + employeeFirstName + "\n" + "Last Name: " + employe
 
  console.log(output);
 
-// end of program 
+// end of program

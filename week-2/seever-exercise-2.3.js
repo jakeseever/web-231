@@ -9,9 +9,6 @@
 
 var header = require('../seever-header.js');
 
-// pass in the firstName, lastName, and assignment parameters required for the header.
-console.log(header.display("Jake", "Seever", "Exercise 2.3 - Function Properties"));
-
 // start program
 
 /*
@@ -36,6 +33,9 @@ function myName() {
 }
 
 // output
+
+// pass in the firstName, lastName, and assignment parameters required for the header.
+console.log(header.display("Jake", "Seever", "Exercise 2.3 - Function Properties"));
 console.log('\n');
 console.log("Hello " + myName() + " Seever!");
 
