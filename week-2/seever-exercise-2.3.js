@@ -3,7 +3,7 @@
 ; Title:  seever-header-test.js
 ; Author: Jake Seever
 ; Date:   09 December 2018
-; Description: Displays a formatted header
+; Description: Displays a first name and last name.
 ;===========================================
 */
 
