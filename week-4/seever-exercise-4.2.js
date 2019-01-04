@@ -8,7 +8,7 @@
 */
 
 var header = require('../seever-header.js');
-console.log(header.display("Jake", "Seever", "Assignment 3.2 - Pattern Matching Functions"));
+console.log(header.display("Jake", "Seever", "Assignment 4.2 - Arrays"));
 console.log('\n');
 
 /*
