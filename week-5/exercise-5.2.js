@@ -1,9 +1,9 @@
 /*
 ============================================
-; Title:  seever-discussion-5.1
+; Title:  seever-exercise-5.2
 ; Author: Jake Seever
 ; Date:   09 January 2019
-; Description: Use the ES5 built-in foreach function to return values from an array.
+; Description: Use the ES5 built-in foreach function to output values from an array.
 ;===========================================
 */
 
