@@ -19,49 +19,32 @@ console.log('\n');
   Discussion 5.1 - Advanced Arrays
   Today's Date
 
-  -- THE RAT PACK --
-  Frank Sinatra - Ol' Blue Eyes
-  Dean Martin - The King of Cool
-  Sammy Davis Jr. - Mister Show Business
-  Peter Lawford - Brother In-Lawford
-  Joey Bishop - The Frown Prince of Comedy
-
+ -- THE RAT PACK --
+Frank Sinatra is known as Ol'Blue Eyes
+Dean Martin is known as The King of Cool
+Sammy Davis Jr. is known as Mister Show Business
+Peter Lawford is known as Brother In-Lawford
+Joey Bishop is known as The Frown Prince of Comedy
 
 */
 
 // start program
 
-// keyed collection arrays
-var ratPack = [
-  {
-    name:'Frank Sinatra',
-    nickName: "Ol' Blue Eyes",
-  },
-  {
-    name:'Dean Martin',
-    nickName: 'The King of Cool'
-  },
-  {
-    name:'Sammy Davis Jr.',
-    nickName: 'Mister Show Business'
-  },
-  {
-    name:'Peter Lawford',
-    nickName: 'Brother In-Lawford'
-  },
-  {
-    name:'Joey Bishop',
-    nickName: 'The Frown Prince of Comedy'
-  }
-];
+// keyed collection
 
-
+var nickNames = new Map();
+nickNames.set('Frank Sinatra', "Ol'Blue Eyes");
+nickNames.set('Dean Martin', 'The King of Cool');
+nickNames.set('Sammy Davis Jr.', 'Mister Show Business');
+nickNames.set('Peter Lawford', 'Brother In-Lawford');
+nickNames.set('Joey Bishop', 'The Frown Prince of Comedy');
 
 
 // output
-console.log("-- THE RAT PACK --");
 
-// function to loop over and get the Rat Pack members from the ratPack array.
-ratPack.forEach(function(member){console.log(member.name+ " - " + member.nickName)});
+console.log("-- THE RAT PACK --");
+for (var[key, value] of nickNames){
+  console.log(key + " is known as " +  value);
+}
 
 // end program
