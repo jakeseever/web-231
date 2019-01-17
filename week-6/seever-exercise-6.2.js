@@ -36,12 +36,12 @@ try {
 
 }catch(err) {
 
-  // Output the error
+  // Output the error to the console
   console.log("Catch clause: " + err);
 
 }finally {
 
-  // Output the end of the clause has been reached successfully
+  // Output to the console that the end of the clause has been reached successfully
   console.log("Finally clause reached...")
 
 }

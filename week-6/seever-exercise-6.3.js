@@ -24,12 +24,14 @@ console.log('\n');
 
 // Start program
 
+// Create a ticket object and assign properties
 var ticket = {
   id: 101,
   name: "Help Desk Support",
   requester: "Bob Jones"
 }
 
+// Output the properties of the ticket object to the console
 console.log("{id: " + ticket.id + ", name: " + ticket.name + ", requester: " + ticket.requester +"}")
 
 

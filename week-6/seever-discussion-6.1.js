@@ -3,7 +3,7 @@
 ; Title:  seever-discussion-6.1
 ; Author: Jake Seever
 ; Date:   16 January 2019
-; Description: Debug faulty code.
+; Description: Objects and Built-In Objects, debug faulty code
 ;===========================================
 */
 
@@ -16,7 +16,7 @@ console.log('\n');
   Expected output:
 
   FirstName LastName
-  Discussion 6.1 - Objects and Built-In Objects
+  Discussion 6.1
   Today's Date
 
   Aaron Rodgers plays quarterback for the Green Bay Packers
@@ -25,6 +25,7 @@ console.log('\n');
 
 // start program
 
+// Create a player object with properties
 var player = {
   firstName: "Aaron",
   lastName: "Rodgers",
@@ -33,6 +34,7 @@ var player = {
   team: "Green Bay Packers"
 }
 
+// output the properties of the player object to the console
 console.log(player.firstName + " " + player.lastName + " plays " + player.position + " for the " + player.team);
 
 // End program
