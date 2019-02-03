@@ -1,0 +1,92 @@
+<!--
+============================================
+; Title:  seever-exercise-8.2.html
+; Author: Jake Seever
+; Date:   02 January 2019
+; Description: Dynamic HTML
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+  <style type="text/css">
+    #topbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: green;
+      text-align: center;
+      height: 75px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+    }
+    ul {
+      list-style: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      margin: 0px auto;
+      margin-top: 95px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="topbar">
+  <h1>List of Fruits</h1>
+</div>
+
+<div id="fruits"></div>
+
+<script>
+  // create an array of fruits with 2 fields each.
+  var fruits = [
+    {
+      id: 1,
+      type: 'Apple'
+    },
+    {
+      id: 2,
+      type: 'Banana'
+    },
+    {
+      id: 3,
+      type: 'Orange'
+    },
+    {
+      id: 4,
+      type: 'Strawberry'
+    },
+    {
+      id: 5,
+      type: 'Cherry'
+    }
+  ];
+
+  // Create the opening unordered list tag and give it a title.
+  var listContent = "<ul title='fruitsList'>";
+
+  // loop over the array of fruits.
+  for(var x = 0; x < fruits.length; x++){
+    // add each array item to the output string.
+    listContent += "<li>" + fruits[x].id + " " + fruits[x].type;
+  }
+
+  // add the closing unordered list tag.
+  listContent += "</ul>";
+
+  // get the fruits div and store it in a variable.
+  var output = document.getElementById('fruits');
+
+  // output the list content string to the fruits div.
+  output.innerHTML = listContent;
+
+</script>
+
+</body>
+</html>

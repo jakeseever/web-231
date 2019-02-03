@@ -1,0 +1,43 @@
+<!--
+============================================
+; Title:  seever-discussion-8.1.html
+; Author: Jake Seever
+; Date:   31 January 2019
+; Description: DOM Manipulation(JQuery)
+;===========================================
+-->
+
+<!--
+  Expected output
+  Welcome to the JavaScript in Web Browsers using jQuery debugging lesson! // This should be in red font.
+  Congratulations, if you are reading this your web browser, you have found the errors!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation(JQuery)</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <h1 id="output1"></h1>
+
+  <h2 id="output2"></h2>
+
+  <script>
+    // Output to the output1 h1 tag
+    $('#output1').html("Welcome to the JavaScript in Web Browsers using jQuery debugging lesson!");
+
+    // Change output 1 to red
+    $('#output1').css("color", "red");
+
+    // Output to the output2 h2 tag
+    $('#output2').html("Congratulations, if you are reading this in your web browser, you have found the errors!");
+
+  </script>
+
+</body>
+</html>
