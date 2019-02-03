@@ -1,0 +1,129 @@
+<!--
+============================================
+; Title:  seever-exercise-8.3.html
+; Author: Jake Seever
+; Date:   02 February 2019
+; Description: jQuery
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+</head>
+<body>
+  <div id="topbar">
+    <h1>jQuery DOM Manipulation Exercise</h1>
+  </div>
+
+  <div id="mainContent">
+
+  <h2>Toggle Demonstration</h2>
+
+  <p id="mainP" title="Main paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus suscipit nibh.
+      Aenean faucibus, diam vel mollis rutrum, nulla arcu imperdiet purus, a condimentum nisi est
+      quis leo. Morbi efficitur, eros pretium vulputate lacinia, orci dolor commodo augue, id elementum
+      ipsum turpis a ligula. Aenean rutrum volutpat neque, et posuere nibh laoreet id. Nunc tristique
+      aliquam mauris sagittis convallis. Phasellus malesuada rhoncus iaculis. Nulla vitae tellus vitae
+      tortor volutpat sodales. Aliquam at orci a arcu venenatis dignissim.
+  </p>
+
+  <!-- Create a button that will be used to toggle the visibility of the main paragraph-->
+  <button id="toggle" type="button">Toggle</button>
+
+  <!-- Create a table holding 5 fruits and their id's-->
+  <table>
+
+      <tr class="fruit">
+        <th>Id</th>
+        <th>Type</th>
+      </tr>
+
+      <tr>
+        <td><a href="#" class="fruitId">1</a></td>
+        <td>Apple</td>
+      </tr>
+
+      <tr>
+        <td><a href="#" class="fruitId">2</a></td>
+        <td>Banana</td>
+      </tr>
+
+      <tr>
+        <td><a href="#" class="fruitId">3</a></td>
+        <td>Orange</td>
+      </tr>
+
+      <tr>
+        <td><a href="#" class="fruitId">4</td>
+        <td>Strawberry</td>
+      </tr>
+
+      <tr>
+        <td><a href="#" class="fruitId">5</td>
+        <td>Cherry</td>
+      </tr>
+
+    </table>
+
+<script type="text/javascript">
+    // Use jQuery's toggle funtion to toggle the display of the main paragraph.
+    $('#toggle').click(function(){
+      $('#mainP').toggle();
+    });
+
+    // create a click function to output the fruit id and type when the id is clicked on.
+    $('.fruitId').click(function(){
+
+      // store the current text of the current td that was clicked.
+      var fruitID = $(this).text();
+
+      // get the next td of the same row that was clicked and store it's text in a variable.
+      var fruitType = $(this).closest('td').next().text();
+
+      // alert the fruit id and fruit type.
+      alert("The fruit Id that you've selected is " + fruitID + " and the fruit type is " + fruitType);
+   });
+
+   // Create styles for the page
+
+      // Create font styles
+      $('body').css('font-family', '"Roboto", sans-serif');
+      $('h1').css('font-weight', '500');
+      $('h2').css('margin-top', '20px');
+      $('h2').css('font-weight', '500');
+      $('p').css('font-weight', '300');
+      $('th').css('font-weight', '400');
+      $('td').css('font-weight', '300');
+      $('a').css('text-decoration', 'none');
+
+      // Create table styles
+      $('table').css('margin-top', '20px');
+      $('th').css('background-color', '#165de0');
+      $('tr:nth-child(even)').css('background-color', '#5e7496');
+      $('tr:nth-child(odd)').css('background-color', 'aeb4bf');
+
+      // Create topbar styles
+      $('#topbar').css('background-color', '#2d23ed');
+      $('#topbar').css('height', '60px');
+      $('#topbar h1').css('text-align', 'center');
+
+      //align everything 20 px to the left
+      $('#mainContent').css('margin-left', '20px');
+
+</script>
+
+</div>
+
+</body>
+</html>
